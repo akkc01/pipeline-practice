@@ -1,0 +1,43 @@
+# trigger: none.  # jab pipeline mannualy chalana ho
+
+trigger:
+  branches:
+    include:
+      - features/*
+      - main
+
+
+trigger:
+  - features/*
+  - main
+
+
+pool:
+  name: Default
+
+pool: Default
+
+
+stages:
+  - stage: intiPlan
+    displayName: "Init and plan"
+    jobs:
+      - job: initplan
+        displayName: "init and plan"
+        steps:
+        
+
+          - script: ""
+            displayName: "script"
+
+  - stage: manualApproval
+    displayName: "Init and plan"
+    jobs:
+      - job: initplan
+        displayName: "init and plan"
+        steps:
+          - task: ""
+            displayName: "task"
+
+          - script: ""
+            displayName: "script"
