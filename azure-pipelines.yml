@@ -25,10 +25,12 @@ stages:
       - job: initplan
         displayName: "init and plan"
         steps:
+        - task: TerraformInstaller@1
+          inputs:
+            terraformVersion: 'latest'
+
         
 
-          - script: ""
-            displayName: "script"
 
   - stage: manualApproval
     displayName: "Init and plan"
